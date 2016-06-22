@@ -2,3 +2,5 @@ venv/
 *.zip
 dist/
 *.pyc
+build/
+tmp/
