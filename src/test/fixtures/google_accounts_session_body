@@ -1,0 +1,46 @@
+<html>
+  <head>
+  <title>Google Accounts</title>
+  <meta http-equiv="refresh" content="4;url=https://accounts.google.com/o/saml2/initsso?idpid=C03sswb4h&amp;spid=553442466309&amp;forceauthn=false"></meta>
+  </head>
+  <body>
+  <p>Loading, please wait ...</p>
+  <script type="text/javascript"> <!--
+      var Ga,G=G||{};G.c={s:"cookie_missing",i:"cookie_found",u:"gaia_failure"};var Gc=function(a,b){var c=a;a&&"string"==typeof a&&(c=document.getElementById(a));if(b&&!c)throw new Gb(a);return c},Gb=function(a){this.id=a;this.toString=function(){return"No element found for id '"+this.id+"'"}};var Gd={},Gg=function(a,b,c){var d=function(a){var b=c.call(this,a);!1===b&&Ge(a);return b};a=Gc(a,!0);a.addEventListener(b,d,!1);Gf(a,b).push(d);return d},Gh=function(a,b,c){a=Gc(a,!0);var d=function(){var b=window.event,d=c.call(a,b);!1===d&&Ge(b);return d};a.attachEvent("on"+b,d);Gf(a,b).push(d);return d},Gi;Gi=window.addEventListener?Gg:window.attachEvent?Gh:void 0;var Ge=function(a){a.preventDefault?a.preventDefault():a.returnValue=!1;return!1};
+var Gf=function(a,b){Gd[a]=Gd[a]||{};Gd[a][b]=Gd[a][b]||[];return Gd[a][b]};var Gj=function(){try{return new XMLHttpRequest}catch(c){for(var a=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"],b=0;b<a.length;b++)try{return new ActiveXObject(a[b])}catch(d){}}return null},Gk=function(){this.request=Gj();this.parameters={}};
+Gk.prototype.send=function(a,b){var c=[],d;for(d in this.parameters){var f=this.parameters[d];c.push(d+"="+encodeURIComponent(f))}var c=c.join("&"),e=this.request;e.open("POST",a,!0);e.setRequestHeader("Content-type","application/x-www-form-urlencoded");e.onreadystatechange=function(){4==e.readyState&&b({status:e.status,text:e.responseText})};e.send(c)};
+Gk.prototype.get=function(a,b){var c=this.request;c.open("GET",a,!0);c.onreadystatechange=function(){4==c.readyState&&b({status:c.status,text:c.responseText})};c.send()};var Gm=function(a){this.j=a;this.G=this.D();if(null==this.j)throw new Gl("Empty module name");};Ga=Gm.prototype;Ga.D=function(){var a=window.location.pathname;return a&&0==a.indexOf("/accounts")?"/accounts/JsRemoteLog":"/JsRemoteLog"};
+Ga.v=function(a,b,c){var d=this.G,f=this.j||"",d=d+"?module="+encodeURIComponent(f);a=a||"";d=d+"&type="+encodeURIComponent(a);b=b||"";d=d+"&msg="+encodeURIComponent(b);c=c||[];for(a=0;a<c.length;a++)d=d+"&arg="+encodeURIComponent(c[a]);try{var e=Math.floor(1E4*Math.random()),d=d+"&r="+String(e)}catch(g){}return d};Ga.send=function(a,b,c){var d=new Gk;d.parameters={};try{var f=this.v(a,b,c);d.get(f,function(){})}catch(e){}};Ga.error=function(a,b){this.send("ERROR",a,b)};
+Ga.warn=function(a,b){this.send("WARN",a,b)};Ga.info=function(a,b){this.send("INFO",a,b)};Ga.H=function(a){var b=this;return function(){try{return a.apply(null,arguments)}catch(c){throw b.error("Uncatched exception: "+c),c;}}};var Gl=function(){};G=G||{};G.a=G.a||new Gm("iframe_set_sid");G.F=function(){return window.__TIMEOUT};G.C=function(){return window.__CONTINUE_URL};G.g=function(){return window.__FALLBACK_URL};G.b=function(){return window.__DOMAIN_SETTINGS};G.B=function(){var a=G.b(),b;for(b in a){var c=a[b];if("continue"==c.type)return c}return null};G.l=function(){var a=G.b(),b;for(b in a){var c=a[b];if(null==c.status)return!1}return!0};G.redirect=function(a){window.location.replace(a)};G_redirect=G.redirect;
+G.m=function(){var a=G.C();G_redirect(a)};G.f=function(){var a=G.g();G_redirect(a)};G.h=null;G.M=function(){G.o("Setting SID timeout")};G.o=function(a){var b=G.B();null!=b&&b.status==G.c.i?G.m():(G.a.info(a),G.f())};G.K=function(){var a=G.F();G.h=window.setTimeout(G.M,a)};G.L=function(){null!=G.h&&window.clearTimeout(G.h)};
+G.I=function(a){var b=a.origin;a=a.data;var c=G.b(),b=c[b.toLowerCase()];null!=b&&(a!=G.c.s&&a!=G.c.i&&a!=G.c.u?G.a.warn("Received unexpected Message",["Message: "+a]):(b.status=a,G.l()&&(G.L(),G.o("Iframe error on setting SID"))))};G.w=function(a,b){var c=window.document.createElement("iframe"),d=c.style;d.visibility="hidden";d.width="1px";d.height="1px";d.position="absolute";d.top="-100px";c.src=a;null!=b&&(c.id=b);document.body.appendChild(c)};
+G.A=function(){var a=G.b(),b;for(b in a){var c=a[b];G.w(c.uri,c.name)}};
+G.N=function(){if(null==G.g())return G.a.error("Continue URL is empty"),!1;if(null==G.g())return G.a.error("Fallback URL is empty"),!1;var a=G.b();if(null==a)return G.a.error("No domain is configured"),G.f(),!1;for(var b in a){var c=a[b],d=null,f=[];null==c.name?d="Invalid domain configuration: name is empty":null==c.uri?(d="Invalid domain configuration: URL is empty",f.push("domain name: "+c.name)):null==c.type&&(d="Invalid domain configuration: domain type is empty",f.push("domain name: "+c.name));
+if(null!=d)return G.a.error(d,f),G.f(),!1}return!0};G.J=function(){G.N()&&(G.l()?(G.a.error("Zero domain is configured"),G.m()):window.postMessage?(G.K(),Gi(window,"message",G.I),G.A()):G.f())};G_startSetSid=G.a.H(G.J);
+
+
+      window.__TIMEOUT = '2000';
+      window.__FALLBACK_URL = 'https:\x2F\x2Faccounts.google.com\x2Fo\x2Fsaml2\x2Finitsso?idpid=C03sswb4h\x26spid=553442466309\x26forceauthn=false';
+      window.__CONTINUE_URL = 'https:\x2F\x2Faccounts.google.com\x2Fo\x2Fsaml2\x2Finitsso?idpid=C03sswb4h\x26spid=553442466309\x26forceauthn=false';
+      window.__DOMAIN_SETTINGS = {};
+
+
+        window.__DOMAIN_SETTINGS['https:\x2F\x2Faccounts.youtube.com']
+            = { uri: 'https:\x2F\x2Faccounts.youtube.com\x2Faccounts\x2FSetSID?ssdc=1\x26sidt=ALWU2csrLjdKO9iyOhdTDeg1K%2BklTgMi6L%2FO0wfC9iwtX%2FcORXuDtnQWFEyyiQquOzjd2Wth7RcJHBW6u%2BBc3ue7z3gxOgxDxPvsd1RqOslo7YbEj1ng0yIFIQKBf9IvoRg50Jp5jPbV6CQXgOlGdHZD7wF%2B1sIPo0TtiNVqV5GsKprTyzH2%2BzzFccpOoBySNApAPFMWMCjfw4Et4XToVjINNx6gnQBqdA6P0dj%2BgSRxFLvbXnWaslrIiDjfeee3RAh0wthbNVvstCSHtAd2A53Ry5%2BX8%2BbwOmfboDPmvicYhJxeqd%2BEiT8%3D\x26pmpo=https%3A%2F%2Faccounts.google.com',
+                origin: 'https:\x2F\x2Faccounts.youtube.com',
+                name: 'youtube',
+                type: 'other'
+              };
+
+        window.__DOMAIN_SETTINGS['https:\x2F\x2Faccounts.google.co.uk']
+            = { uri: 'https:\x2F\x2Faccounts.google.co.uk\x2Faccounts\x2FSetSID?ssdc=1\x26sidt=ALWU2cvDTT25ipNaTxzz5IxqLZIi%2FGhyt5q%2F6heZ4ORjEw84bwUQum8Yrh3%2FiRPz%2FWNUsVYDqI6XeusLs295Ir9xvHGpigPNAQkQlW9PKLiRXWgDOJK3clJiDRBPJWl3aVZVl10N1eryqkin%2BWaV1sANsZ7mcYWFCn4sgn3jtFERorMxzSOgl3SdeKQHMkKzp9CZDKmYyNq9UAG%2F5Ui6W74KaRUZBraZ8ybS2jMlNbp0%2BapC95l%2F75uIlg%2FpZQNBm59wohRFjsWIMaoicZJlxAu7ynuX%2F11mGOYp%2BgB3%2FeVy36RGuRqquqE%3D\x26pmpo=https%3A%2F%2Faccounts.google.com',
+                origin: 'https:\x2F\x2Faccounts.google.co.uk',
+                name: 'GB',
+                type: 'other'
+              };
+
+
+      G_startSetSid();
+    --> </script>
+  </body>
+</html>
