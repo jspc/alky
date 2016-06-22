@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+mkdir -p dist/
+pip install -r requirements.txt -t dist/
+cp -R src/* dist/
+
+pushd dist
+  zip -r --verbose ../alky.zip *
+popd
